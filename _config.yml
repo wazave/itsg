@@ -1,0 +1,2 @@
+baseurl: /itsg
+exclude: ['README.md']
