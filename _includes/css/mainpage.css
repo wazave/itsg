@@ -1,0 +1,9 @@
+.name, .subname {
+  font-family: soberana;
+  text-align: center;
+}
+
+.main {
+  max-width: 60em;
+  margin: 0 auto;
+}

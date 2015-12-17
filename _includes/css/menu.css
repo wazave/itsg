@@ -1,0 +1,15 @@
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(254, 0, 26, 1);
+  padding: 0;
+  color: white;
+  font-family: soberanasans;
+}
+
+.slider {
+  background: linear-gradient(40deg, #accd3a, #2bc792);
+  height: 20rem;
+  max-width: 60rem;
+}
