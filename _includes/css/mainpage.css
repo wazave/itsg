@@ -1,6 +1,7 @@
 .name, .subname {
   font-family: soberana;
   text-align: center;
+  display: block;
 }
 
 .main {
