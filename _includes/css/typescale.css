@@ -1,13 +1,11 @@
----
----
 @font-face {
     font-family: soberana;
-    src: url({{baseurl}}/assets/font/soberana.otf);
+    src: url(../assets/font/soberana.otf);
 }
 
 @font-face {
     font-family: soberanasans;
-    src: url({{baseurl}}/assets/font/soberanasans.otf);
+    src: url(../assets/font/soberanasans.otf);
 }
 * {
   margin: 0;
