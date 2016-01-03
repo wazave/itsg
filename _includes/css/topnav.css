@@ -1,0 +1,53 @@
+.toplinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 61.53%;
+  margin-top: 0;
+}
+
+.topnav li {
+  text-align: center;
+  flex: auto;
+  display: block;
+}
+
+.topnav li:hover {
+  background: rgba(0, 0, 0, 0.2);;
+  color: white;
+}
+
+.topnav li:hover:last-child{
+  background: white;
+}
+
+input {
+  border: none;
+  background: rgba(0, 0, 0, 0.1);;
+  width: 100%;
+}
+
+input:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logosep {
+  max-width: 30%;
+}
+
+.logogov {
+  max-width: 15%;
+  align-self: flex-end;
+}
