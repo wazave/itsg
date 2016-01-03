@@ -4,6 +4,9 @@
   display: block;
 }
 
+.subname {
+  color: rgb(150, 150, 150);
+}
 .main {
   max-width: 60em;
   margin: 0 auto;

@@ -2,12 +2,22 @@
   list-style: none;
   display: flex;
   justify-content: space-around;
-  background: rgba(254, 0, 26, 1);
+  background: rgba(220, 36, 48, 1);
   padding: 0;
   color: white;
   font-family: soberanasans;
   max-width: 60rem;
   margin: 0 auto;
+}
+
+.menu li {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.menu li:hover{
+  background: rgb(200, 16, 28);
+  cursor: pointer;
 }
 
 .slider {
