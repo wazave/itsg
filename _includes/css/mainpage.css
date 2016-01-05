@@ -11,3 +11,21 @@
   max-width: 60em;
   margin: 0 auto;
 }
+
+.logosep {
+  max-width: 30%;
+  background-image: url(../assets/img/logoSep.png);
+  background-size: contain;
+}
+
+.logosepcont {
+  width: 100%;
+  visibility: hidden;
+}
+
+.logogov {
+  max-width: 15%;
+  align-self: flex-end;
+  background-image: url(../assets/img/sepc.jpg);
+  background-size: contain;
+}

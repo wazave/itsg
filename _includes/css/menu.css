@@ -11,13 +11,39 @@
 }
 
 .menu li {
-  display: block;
   width: 100%;
   text-align: center;
+  flex: 0 1 auto;
+  z-index: 1;
+  position: relative;
 }
 .menu li:hover{
   background: rgb(200, 16, 28);
   cursor: pointer;
+}
+
+.menu li:hover ul{
+  cursor: pointer;
+  visibility: visible;
+  opacity: 1;
+  top: 1.9rem;
+}
+
+.menu li ul {
+  transition: all .2s ease;
+  background: rgb(200, 16, 28);
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  top: 1.6rem;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu li ul li:hover{
+  background: rgba(220, 36, 48, 1);
 }
 
 .slider {

@@ -32,9 +32,15 @@ input {
   border: none;
   background: rgba(0, 0, 0, 0.1);;
   width: 100%;
+  color: white;
 }
 
 input:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  outline: none;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -42,13 +48,4 @@ input:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.logosep {
-  max-width: 30%;
-}
-
-.logogov {
-  max-width: 15%;
-  align-self: flex-end;
 }
