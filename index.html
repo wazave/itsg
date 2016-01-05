@@ -25,6 +25,21 @@ layout: default
   </div>
   <div class="slider push-half">
   </div>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class="posts">
+  {% for post in site.posts %}
+    <div class="news push-half">
+        <img src="{{site.baseurl}}/assets/img/{{post.image}}" alt="" style="min-width:38%;" class="push-right-half"/>
+        <div class="content">
+          <p class="date">
+            {{ post.date | date_to_string }}
+          </p>
+          <h2>{{post.title}}</h2>
+          <p class="desc">
+            {{post.desc}}
+          </p>
+        </div>
+    </div>
+  {% endfor %}
+</div>
+  <p style="color:green;background:rgb(255,255,0);">
   </p>
