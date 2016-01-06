@@ -8,7 +8,7 @@
   list-style: none;
   align-items: center;
   justify-content: space-between;
-  width: 61.53%;
+  min-width: 61.53%;
   margin-top: 0;
 }
 

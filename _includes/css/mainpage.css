@@ -33,7 +33,7 @@
 .news {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .date {
@@ -42,5 +42,18 @@
 }
 
 .desc {
-  margin: 0;  
+  margin: 0;
+}
+
+.content {
+  margin-left: 0.65rem;
+  background: rgba(0, 0, 0, 0.04);
+
+}
+
+.news:nth-child(even) .content{
+  margin-right: 0.65rem;
+  margin-left: 0;
+  background: rgba(0, 0, 0, 0.04);
+  order: -1;
 }
