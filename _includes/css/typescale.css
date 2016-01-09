@@ -11,6 +11,9 @@
   margin: 0;
   padding: 0;
 }
+.soberana{
+  font-family: soberana;
+}
 html {
   font-size: 100%;
   line-height: 1.3;

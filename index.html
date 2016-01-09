@@ -24,6 +24,18 @@ layout: default
     {% include nav.html %}
   </div>
   <div class="slider push-half">
+    <div class="smain"></div>
+    <div class="ssub">
+      <div class="ssubchild"></div>
+      <div class="ssubchild"></div>
+      <div class="ssubchild"></div>
+      <div class="ssubchild"></div>
+    </div>
+  </div>
+  <div class="modulos push-half">
+    <div class="submod1"></div>
+    <div class="submod2"></div>
+    <div class="submod3"></div>
   </div>
   <div class="posts">
   {% for post in site.posts %}
@@ -49,7 +61,7 @@ layout: default
             {% endcase %} del
             {{ post.date | date: "%Y" }}
           </p>
-          <h2 class="tera titulo">{{post.title}}</h2>
+          <h2 class="tera titulo soberana">{{post.title}}</h2>
           <p class="desc">
             {{post.desc}}
           </p>
@@ -57,5 +69,13 @@ layout: default
     </div>
   {% endfor %}
 </div>
-  <p style="color:green;background:rgb(255,255,0);">
-  </p>
+<div class="bottom-slider">
+  <div class="bs"></div>
+  <div class="bs"></div>
+  <div class="bs"></div>
+  <div class="bs"></div>
+  <div class="bs"></div>
+  <div class="bs"></div>
+  <div class="bs"></div>
+  <div class="bs"></div>
+</div>
