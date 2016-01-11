@@ -6,12 +6,15 @@
 
 .subname {
   color: rgb(220, 36, 48);
+  color: rgb(205, 0, 0);
 }
 .back {
   background: white;
   position: relative;
   z-index: 2;
-  margin-bottom: 15rem;
+  margin-bottom: 14rem;
+  box-shadow: 0 0 1.5rem black;
+
 }
 .main {
   max-width: 60em;
@@ -23,7 +26,7 @@
 
 .logosep {
   max-width: 30%;
-  background-image: url(../assets/img/logoSep.png);
+  background-image: url(../assets/img/logoSep.jpg);
   background-size: contain;
 }
 
@@ -42,28 +45,33 @@
 .modulos {
   height: 10em;
   width: 100%;
+  display: flex;
 }
 
 .submod1,.submod2,.submod3{
-  width: 30%;
+  width: 40%;
   height: 100%;
-  background: black;
+  background-image: radial-gradient(farthest-corner at 50% 0% , #ffffff 0%, #dddddd 80%);
   display: inline-block;
+  box-shadow: inset 0 0rem 3rem #dddddd,0 0.2rem .5rem #999999;
+
 }
 
 .submod2{
-  background: white;
+  margin: 0 1.3rem 0 1.3rem;
 }
 
 .submod3{
-  background: blue;
 }
 
 .news {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  background: rgb(240, 240, 240);
+  background: linear-gradient(180deg, #ffffff, #dddddd);
+  min-height: 12rem;
+  box-shadow: 0 0.1rem 0.3rem #888888;
+
 }
 
 .date {
@@ -76,39 +84,38 @@
 }
 
 .content {
-  margin-left: 0.65rem;
+  margin-left: 0.65rem;  margin-right: 0.65rem;
 }
 
 .news:nth-child(even){
-  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, #ffffff, #dddddd);
 }
 
 .news:nth-child(even) .content{
   margin-right: 0.65rem;
-  margin-left: 0;
+  margin-left: 0.65rem;
   background: rgba(0, 0, 0, 0.0);
   order: -1;
 }
 
 .titulo{
+color: rgb(205, 0, 0);
   color: rgb(70, 70, 70);
 }
-.bottom-slider{
-  display: flex;
-  flex-flow: wrap;
-  height: 20rem;
-  width: 100%;
-  background: black;
-}
-.bs{
-  width: 25%;
-  background: linear-gradient(40deg, #accd3a, #000);
+
+.footerimage {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
 }
 
+.footernotes{
+  color: white;
+}
 .footer {
   width: 100%;
-  height: 15rem;
-  background: linear-gradient(40deg, #accd3a, #000);
+  height: 14rem;
+  background: linear-gradient(50deg, #ff0000, #990000);
   position: fixed;
   bottom: 0;
 }

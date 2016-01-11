@@ -4,17 +4,22 @@
     <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="{{site.baseurl}}/path/to/unslider.js"></script>
   </head>
   <body>
-    <div class="back pad-bottom-double">
+    <div class="back pad-bottom">
       <div class="main">
         {{content}}
       </div>
     </div>
     <div class="footer">
-      <p style="color:green;background:rgb(255,255,0);">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <div  class="footerdisc pad-t-2">
+        <p class="text-center footernotes">© 2015 Todos los Derechos Reservados</p>
+        <p class="text-center footernotes">Carretera Internacional y entronque a la Brecha</p>
+        <p class="text-center footernotes">Ej. El Burrioncito, Guasave, Sinaloa</p>
+        <p class="text-center footernotes">Tel-Fax. (687) 87 1-45-81</p>
+      </div>
     </div>
   </body>
 </html>
