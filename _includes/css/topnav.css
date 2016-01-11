@@ -19,7 +19,6 @@
 }
 
 .topnav li:hover {
-  background: rgba(0, 0, 0, 0.2);
   background: linear-gradient(180deg, #ffffff, #dddddd);
 
   cursor: pointer;
@@ -31,7 +30,6 @@
 
 input {
   border: none;
-  background: rgba(0, 0, 0, 0.1);
   background: white;
   box-shadow: inset 0 0 2em #dddddd;
 
