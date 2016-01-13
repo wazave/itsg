@@ -9,16 +9,13 @@ layout: default
   </div>
   <div class="banner push-half">
     <!--img src="" alt="" class="logosep"/-->
-    <div class="logosep">
-        <img src="{{site.baseurl}}/assets/img/logoSep.jpg" alt="" class="logosepcont"/>
-    </div>
+        <img src="{{site.baseurl}}/assets/img/logoSep.jpg" alt="" class="logosep"/>
     <div class="nombre">
       <a class="name mega">Tecnológico Nacional de México</a>
       <a class="subname kilo">{{site.title}}</a>
     </div>
-    <div class="logogov">
-      <img src="{{site.baseurl}}/assets/img/sepc.jpg" alt="" class="logosepcont"/>
-    </div>
+      <img src="{{site.baseurl}}/assets/img/sepc.jpg" alt="" class="logogov"/>
+
   </div>
   <div class="push-half">
     {% include nav.html %}
@@ -27,16 +24,16 @@ layout: default
     <img src="{{site.baseurl}}/assets/img/1.jpg" alt="" style="width:100%;"/>
   </div>
   <div class="modulos push">
-    <div class="submod1"></div>
-    <div class="submod2"></div>
-    <div class="submod3"></div>
+    <div class="submod1 island"><div class="submod1cont"><p class="italic push-none pad-top-half">Calendario y</p><p class="peta push-none soberana">Eventos</p></div></div>
+    <div class="submod2 island"><div class="submod1cont"><p class="italic push-none pad-top-half">Buzón de quejas y</p><p class="tera push-quarter pad-top-quarter soberana">Sugerencias</p></div></div>
+    <div class="submod3 island"><div class="submod1cont"><p class="italic push-none pad-top-half">Sistemas de</p><p class="peta push-none soberana">Gestión</p></div></div>
   </div>
   <div class="posts">
   {% for post in site.posts limit: 4%}
     <div class="news push">
         <img src="{{site.baseurl}}/assets/img/{{post.image}}" alt="" style="min-width:38%;"/>
         <div class="content island">
-          <p class="date">
+          <p class="date italic">
             {% assign m = post.date | date: "%-m" %}
             {{ post.date | date: "%-d" }} de
             {% case m %}
@@ -63,9 +60,11 @@ layout: default
     </div>
   {% endfor %}
 </div>
-<div class="modulos push">
-  <div class="submod1"></div>
-  <div class="submod2"></div>
-  <div class="submod3"></div>
+<div class="footersld push">
+  <div class="footersldc firstldc push-r"><div class="footersldcc"><p class=" parrafo giga push-none soberana">Todas las noticias</p></div></div>
+  <div class="footersldc push-r"><div class="footersldcc"><p class="push-none soberana giga">test</p></div></div>
+  <div class="footersldc push-r"><div class="footersldcc"><p class="push-none soberana giga">test</p></div></div>
+  <div class="footersldc"><div class="footersldcc"><p class="push-none soberana giga">test</p></div></div>
+
 </div>
 <img src="{{site.baseurl}}/assets/img/footer.jpg" alt="Logotipos institucionales" class="footerimage"/>
