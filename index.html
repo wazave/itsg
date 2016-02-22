@@ -9,19 +9,26 @@ layout: default
   </div>
   <div class="banner push-half">
     <!--img src="" alt="" class="logosep"/-->
-        <img src="{{site.baseurl}}/assets/img/logoSep.jpg" alt="" class="logosep"/>
+    <img src="{{site.baseurl}}/assets/img/logoSep.jpg" alt="" class="logosep"/>
     <div class="nombre">
       <a class="name mega">Tecnológico Nacional de México</a>
       <a class="subname kilo">{{site.title}}</a>
     </div>
-      <img src="{{site.baseurl}}/assets/img/sepc.jpg" alt="" class="logogov"/>
-
+    <img src="{{site.baseurl}}/assets/img/sepc.jpg" alt="" class="logogov"/>
   </div>
   <div class="push-half">
     {% include nav.html %}
   </div>
   <div class="slider push">
-    <img src="{{site.baseurl}}/assets/img/1.jpg" alt="" style="width:100%;"/>
+    <!--ul class="slideme">
+      <li><img src="{{site.baseurl}}/assets/img/1.jpg" alt="uno" /></li>
+      <li><img src="{{site.baseurl}}/assets/img/2.jpg" alt="dos" /></li>
+      <li><<img src="{{site.baseurl}}/assets/img/3.jpg" alt="tres" /></li>
+    </ul-->
+    <img src="{{site.baseurl}}/assets/img/1.jpg" style="display:inline-block; opacity:1;"/>
+    <img src="{{site.baseurl}}/assets/img/2.jpg"/>
+
+
   </div>
   <div class="modulos push">
     <div class="submod1 island"><div class="submod1cont"><p class="italic push-none pad-top-half">Calendario y</p><p class="peta push-none soberana">Eventos</p></div></div>
@@ -31,7 +38,7 @@ layout: default
   <div class="posts">
   {% for post in site.posts limit: 4%}
     <div class="news push">
-        <img src="{{site.baseurl}}/assets/img/{{post.image}}" alt="" style="min-width:38%;"/>
+        <img src="{{site.baseurl}}/assets/img/{{post.image}}" alt="" style="min-width:38%"/>
         <div class="content island">
           <p class="date italic">
             {% assign m = post.date | date: "%-m" %}
@@ -52,7 +59,7 @@ layout: default
             {% endcase %} del
             {{ post.date | date: "%Y" }}
           </p>
-          <h4 class="mega titulo soberana">{{post.title}}</h4>
+          <a href="{{post.url}}" class="mega titulo soberana">{{post.title}}</a>
           <p class="desc">
             {{post.desc}}
           </p>
@@ -65,6 +72,30 @@ layout: default
   <div class="footersldc push-r"><div class="footersldcc"><p class="push-none soberana giga">test</p></div></div>
   <div class="footersldc push-r"><div class="footersldcc"><p class="push-none soberana giga">test</p></div></div>
   <div class="footersldc"><div class="footersldcc"><p class="push-none soberana giga">test</p></div></div>
-
 </div>
 <img src="{{site.baseurl}}/assets/img/footer.jpg" alt="Logotipos institucionales" class="footerimage"/>
+<script charset="utf-8">
+$( document ).ready(function() {
+  var currentIndex = 0,
+  items = $('.slider img'),
+  itemAmt = items.length;
+
+  function cycleItems() {
+    var item = $('.slider img').eq(currentIndex);
+    items.hide();
+    items.css('opacity','0');
+    item.css('display','inline-block');
+    item.css('opacity', '1');
+  }
+
+  var autoSlide = setInterval(function() {
+  currentIndex += 1;
+  if (currentIndex > itemAmt - 1) {
+    currentIndex = 0;
+  }
+  cycleItems();
+}, 4000);
+
+  console.log(itemAmt);
+});
+</script>

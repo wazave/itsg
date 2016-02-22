@@ -44,6 +44,13 @@
   align-self: flex-end;
 }
 
+.slider img {
+  width: 100%;
+  display: none;
+  opacity: 0;
+  transition: 3s ease all;
+}
+
 .modulos {
   max-height: 8em;
   width: 100%;
@@ -117,6 +124,7 @@
 
 .titulo{
   color: rgb(70, 70, 70);
+  text-decoration: none;
 }
 
 .footersld{
@@ -178,4 +186,8 @@
   background: linear-gradient(50deg, #ff0000, #990000);
   position: fixed;
   bottom: 0;
+}
+
+p img {
+  width: 100%;
 }
