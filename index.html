@@ -59,7 +59,7 @@ layout: default
             {% endcase %} del
             {{ post.date | date: "%Y" }}
           </p>
-          <a href="{{post.url}}" class="mega titulo soberana">{{post.title}}</a>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="mega titulo soberana">{{post.title}}</a>
           <p class="desc">
             {{post.desc}}
           </p>
