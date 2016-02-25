@@ -365,7 +365,9 @@ display: flex;}
   .footerimage{
     width: 60%;
   }
-
+  .menu li:hover ul {
+    position: absolute;;
+  }
     .menu{
       flex-wrap: nowrap;
       display: flex;
