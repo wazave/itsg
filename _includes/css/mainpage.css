@@ -200,6 +200,10 @@ p img {
   height: 50%;
 }
 
+.fix p:not(:first-child) {
+  text-align: justify;
+}
+
 .fix{
-  
+
 }
