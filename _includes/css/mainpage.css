@@ -241,6 +241,9 @@ p img {
   .submod3, .submod2, .submod1{
     width: 100%;
   }
+  .content{
+    width: 100%;
+  }
   .news{
     flex-wrap: wrap;
   }
@@ -330,6 +333,10 @@ display: flex;}
   }
   .submod3{
     width: auto;
+  }
+
+  .content{
+    width: 62%;
   }
   .news{
     flex-wrap: nowrap;
