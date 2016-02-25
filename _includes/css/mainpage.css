@@ -37,12 +37,12 @@
 .nombre {
 }
 .logosep {
-  max-width: 30%;
+  width: 30%;
 }
 
 
 .logogov {
-  max-width: 15%;
+  width: 15%;
   align-self: flex-end;
 }
 
@@ -91,7 +91,6 @@
   align-items: stretch;
   background: radial-gradient(farthest-corner at 50% 0% , #ffffff 0%, #f0f0f0 80%);
   border-radius:0.2rem;
-  min-height: 12rem;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
 }
 
@@ -106,18 +105,11 @@
 }
 
 .content {
-  margin-left: 0.65rem;  margin-right: 0.65rem;
-}
-
-.news:nth-child(even){
-  background: radial-gradient(farthest-corner at 50% 0% , #ffffff 0%, #f0f0f0 80%);
-
+  /*margin-left: 0.65rem;  margin-right: 0.65rem;*/
+  width: 62%;
 }
 
 .news:nth-child(even) .content{
-  margin-right: 0.65rem;
-  margin-left: 0.65rem;
-  background: rgba(0, 0, 0, 0.0);
   order: -1;
 }
 
@@ -344,7 +336,7 @@ display: flex;}
   }
   .news img {
     border-radius:0.2rem 0 0 0.2rem;
-    min-width: 38%;
+    width: 38%;
     height: auto;
   }
   .news:nth-child(even) img {
@@ -366,7 +358,8 @@ display: flex;}
     width: 60%;
   }
   .menu li:hover ul {
-    position: absolute;;
+    position: absolute;
+
   }
     .menu{
       flex-wrap: nowrap;
