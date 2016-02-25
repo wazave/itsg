@@ -203,7 +203,3 @@ p img {
 .fix p:not(:first-child) {
   text-align: justify;
 }
-
-.fix{
-
-}
