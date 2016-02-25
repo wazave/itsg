@@ -6,34 +6,38 @@
     <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
   </head>
   <body>
-    <div class="back pad-bottom">
-      <div class="main"><div class="toplinks">
-        <div>
+    <div class="back">
+      <div class="main gutter">
+        <div class="toplinks pad-top-half">
+          <div>
+          </div>
+          {% include topnav.html %}
         </div>
-        {% include topnav.html %}
-      </div>
-      <div class="banner push-half">
-        <!--img src="" alt="" class="logosep"/-->
-            <img src="{{site.baseurl}}/assets/img/logoSep.jpg" alt="" class="logosep"/>
-        <div class="nombre">
-          <a class="name mega">Tecnológico Nacional de México</a>
-          <a class="subname kilo">{{site.title}}</a>
+        <div class="banner push">
+          <img src="{{site.baseurl}}/assets/img/logoSep.jpg" alt="" class="logosep"/>
+          <div class="nombre">
+            <a class="name mega">Tecnológico Nacional de México</a>
+            <a class="subname kilo">{{site.title}}</a>
+          </div>
+          <img src="{{site.baseurl}}/assets/img/sepc.jpg" alt="" class="logogov" style="border-radius:0.2rem;"/>
         </div>
-          <img src="{{site.baseurl}}/assets/img/sepc.jpg" alt="" class="logogov"/>
+        <div class="push">
+          {% include nav.html type = 'true'%}
+        </div>
+        <div class="fix pad-bottom-half">
+          <p class="soberana text-center peta">{{ page.title }}</p>
+          <div style="background: url({{site.baseurl}}/assets/img/{{ page.image }}); background-size:cover;" class="blur-me push"></div>
+          {{content}}
+        </div>
 
       </div>
-      <div class="push-half">
-        {% include nav.html type='true'%}
-      </div>
-        {{content}}
-      </div>
     </div>
-    <div class="footer">
-      <div  class="footerdisc pad-t-2">
-        <p class="text-center footernotes">© 2015 Todos los Derechos Reservados</p>
-        <p class="text-center footernotes">Carretera Internacional y entronque a la Brecha</p>
-        <p class="text-center footernotes">Ej. El Burrioncito, Guasave, Sinaloa</p>
-        <p class="text-center footernotes">Tel-Fax. (687) 87 1-45-81</p>
+    <div class="footer island">
+      <div  class="footerdisc ">
+        <p class="text-center footernotes push-none">© 2015 Todos los Derechos Reservados</p>
+        <p class="text-center footernotes push-none">Carretera Internacional y entronque a la Brecha</p>
+        <p class="text-center footernotes push-none">Ej. El Burrioncito, Guasave, Sinaloa</p>
+        <p class="text-center footernotes push-none">Tel-Fax. (687) 87 1-45-81</p>
       </div>
     </div>
     <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script-->

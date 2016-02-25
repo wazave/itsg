@@ -1,13 +1,9 @@
 ---
 layout: noticia
-title: nueva noticia
-image: ejemplo.jpg
-desc:  otra descripcion Loreasdkasjd asd asd as da sd as das d asd otra descripcion Loreasdkasjd asd asd as da sd as das d
-
+title: Actos de recepción profesional
+image: ejemplo3.jpg
+desc:  206 Alumnos de los diferentes programas educativos presentaron su examen profesional, para la obtención de título profesional...
 ---
-{{ page.title }}
+206 Alumnos de los diferentes programas educativos presentaron su examen profesional, el cual, consiste en exponer su informe técnico de residencia profesional para la obtención de título profesional para posteriormente tomar protesta como nuevos ingenieros.
 
-asdss
-![My helpful screenshot]({{ site.baseurl }}/assets/img/{{ page.image }})
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Durante su estadía en el mundo laboral los alumnos desarrollaron proyectos que traían consigo impacto en las empresas, donde contaron con un asesor interno y un asesor externo.
