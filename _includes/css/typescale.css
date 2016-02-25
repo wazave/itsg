@@ -19,6 +19,7 @@ html {
   line-height: 1.3;
   font-family: soberanasans;
   color: rgb(90, 90, 90);
+  background: linear-gradient(50deg, #ff0000, #990000);
 }
 
 a {
@@ -271,7 +272,7 @@ td, th, fieldset {
 @media only screen and (min-width: 40em) {
 
 html {
-  font-size: 120%;
+  font-size: 110%;
   line-height: 1.3;
 }
 
@@ -336,7 +337,7 @@ small, .milli {
 @media only screen and (min-width: 60em) {
 
 html {
-  font-size: 130%;
+  font-size: 120%;
   line-height: 1.3;
 }
 

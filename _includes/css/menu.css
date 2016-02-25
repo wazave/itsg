@@ -1,3 +1,14 @@
+.hiddenMenu{
+  background: linear-gradient(#ff0000, #990000);
+  width: 100%;
+  text-align: center;
+  padding: 0.3250rem 0 0.3250rem 0;
+  margin: 0;
+  color: white;
+  display: none;
+  border-radius: 0.2rem;
+}
+
 .menu {
   list-style: none;
   display: flex;
@@ -10,7 +21,6 @@
   margin: 0 auto;
   box-shadow: 0 0.1rem 0.3rem #666666;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-  z-index: 100;
   border-radius:0.2rem;
 }
 

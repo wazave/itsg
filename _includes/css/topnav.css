@@ -10,6 +10,7 @@
   justify-content: space-between;
   min-width: 61.53%;
   margin-top: 0;
+  flex-wrap: wrap;
 }
 
 .topnav li {

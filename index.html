@@ -16,6 +16,9 @@ layout: default
     <img src="{{site.baseurl}}/assets/img/sepc.jpg" alt="" class="logogov" style="border-radius:0.2rem;"/>
   </div>
   <div class="push">
+    <p class="hiddenMenu">
+      Menu
+    </p>
     {% include nav.html %}
   </div>
   <div class="slider push shadow" style="border-radius:0.2rem;">
@@ -23,15 +26,30 @@ layout: default
     <a href="/2" style="width:100%; display:none;"><img src="{{site.baseurl}}/assets/img/2.jpg" style="display:inline-block; opacity:1; width:100%; border-radius:0.2rem; "/></a>
     <a href="/3" style="width:100%; display:none;"><img src="{{site.baseurl}}/assets/img/3.jpg" style="display:inline-block; opacity:1; width:100%; border-radius:0.2rem; "/></a>
   </div>
-  <div class="modulos push">
-    <div class="submod1 island-half shadow" style="border-radius:0.2rem;"><div class="ubmod1cont"><p class="italic push-none pad-top-half">Calendario y</p><p class="peta push-none soberana">Eventos</p></div></div>
-    <div class="submod2 island-half shadow" style="border-radius:0.2rem;"><div class="ubmod1cont"><p class="italic push-none pad-top-half">Buzón de quejas y</p><p class="tera push-quarter pad-top-quarter soberana">Sugerencias</p></div></div>
-    <div class="submod3 island-half shadow" style="border-radius:0.2rem;"><div class="ubmod1cont"><p class="italic push-none pad-top-half">Sistemas de</p><p class="peta push-none soberana">Gestión</p></div></div>
+  <div class="modulos">
+    <div class="submod1 island-half shadow push" style="border-radius:0.2rem;">
+      <div class="ubmod1cont">
+        <p class="italic push-none pad-top-half">Calendario y</p>
+        <p class="peta push-none soberana">Eventos</p>
+      </div>
+    </div>
+    <div class="submod2 island-half shadow push" style="border-radius:0.2rem;">
+      <div class="ubmod1cont">
+        <p class="italic push-none pad-top-half">Buzón de quejas y</p>
+        <p class="tera push-quarter pad-top-quarter soberana">Sugerencias</p>
+      </div>
+    </div>
+    <div class="submod3 island-half shadow push" style="border-radius:0.2rem;">
+      <div class="ubmod1cont">
+        <p class="italic push-none pad-top-half">Sistemas de</p>
+        <p class="peta push-none soberana">Gestión</p>
+      </div>
+    </div>
   </div>
   <div class="posts">
   {% for post in site.posts limit: 4%}
     <div class="news push shadow">
-        <img src="{{site.baseurl}}/assets/img/{{post.image}}" alt="" style="min-width:38%"/>
+        <img src="{{site.baseurl}}/assets/img/{{post.image}}" alt="{{ post.title }}"/>
         <div class="content island">
           <p class="date italic push-none">
             {% assign m = post.date | date: "%-m" %}
@@ -60,11 +78,11 @@ layout: default
     </div>
   {% endfor %}
 </div>
-<div class="footersld push">
-  <div class="footersldc firstldc push-right island shadow"><p class=" parrafo giga push-none soberana">Todas las noticias</p></div>
-  <div class="footersldc push-right island shadow"><p class="push-none soberana giga">test</p></div>
-  <div class="footersldc push-right island shadow"><p class="push-none soberana giga">test</p></div>
-  <div class="footersldc island shadow"><p class="push-none soberana giga">test</p></div>
+<div class="footersld">
+  <div class="footersldc firstldc push-right island shadow push"><p class=" parrafo giga push-none soberana">Todas las noticias</p></div>
+  <div class="footersldc push-right island shadow push"><p class="push-none soberana giga">test</p></div>
+  <div class="footersldc push-right island shadow push"><p class="push-none soberana giga">test</p></div>
+  <div class="footersldc island shadow push"><p class="push-none soberana giga">test</p></div>
 </div>
 <img src="{{site.baseurl}}/assets/img/footer.jpg" alt="Logotipos institucionales" class="footerimage"/>
 <script charset="utf-8">

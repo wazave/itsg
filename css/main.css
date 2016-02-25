@@ -1,7 +1,8 @@
 ---
 ---
 
-{% include css/typescale.css %}
-{% include css/mainpage.css %}
+
 {% include css/menu.css %}
 {% include css/topnav.css %}
+{% include css/typescale.css %}
+{% include css/mainpage.css %}
