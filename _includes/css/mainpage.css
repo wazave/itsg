@@ -368,6 +368,7 @@ display: flex;}
 
     .menu{
       flex-wrap: nowrap;
+      display: flex;
     }
 }
 
